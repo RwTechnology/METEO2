@@ -1,0 +1,117 @@
+body {
+  margin: 1rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.entete {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1rem solid red;
+  margin-bottom: 2rem;
+}
+
+.entete img {
+  width: 100px;
+  border-radius: 70rem;
+}
+
+.searchBox
+{
+    width: 50%;
+    margin: auto;
+    border: 1px blue solid;
+    display: flex;
+}
+
+
+.searchBox input[type="text"],#search
+{
+    width: 70%; 
+    border: 2px solid white;
+    border-right: 0;
+    font-size: 18px;
+    padding: 12px;
+    background: transparent;
+    color: black;
+    outline: none;
+}
+
+.searchBox #search
+{
+  width:25%;
+  background: red;
+  color: black;
+  border-radius: 1rem;
+  border-left: 0px;
+  cursor: pointer;
+}
+
+.searchBox #search:active
+{
+ padding: 1rem;
+}
+
+.corps {
+  width: 100%;
+  height: 150vh;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  margin-bottom: 2rem;
+  padding-top: 20%;
+  display: none;
+}
+.corps .card_meteo {
+  margin: auto;
+padding-top: 2rem;
+text-align: center;
+font-size: 3rem;
+background: rgba(0, 0, 0, 0.6);
+  width: 40%;
+  height: 60%;
+  display: none;
+}
+
+.corps .card_meteo div {
+   margin-bottom: 2rem;
+}
+
+.pied {
+  text-align: center;
+  font-size:2rem ;
+  color: white;
+  background: black;
+  padding: 2rem;
+}
+
+
+@media(max-width:750px)
+{
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
+  .entete {
+    flex-direction: column;
+  }
+
+  .searchBox
+  {
+      width: 100%;
+      margin: 0;
+  }
+  
+  .searchBox #search
+{
+  font-size: 15px;
+}
+
+.corps .card_meteo {
+  width: 95%;
+  height: 75%;
+}
+
+}

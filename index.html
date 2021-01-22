@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/releases/v5.15.1/js/all.js"
+     data-auto-replace-svg="nest"></script>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/slider.css">
+    <title>app weather</title>
+</head>
+<body>
+
+    <!-- ==============================================================================
+                            tete de la page
+        ============================================================================== -->
+    <header class="entete">
+        <div class="logo">
+            <img src="./images/logo.jpg">
+            <legend>APP weather</legend>
+        </div>
+       
+        <form class="searchBox">
+            <input type="text"  id="textsearch"  placeholder="saisissez votre ville ici.." required>
+           <input type="submit" value="SEARCH " id="search">
+        </form>
+    </header>
+
+
+ <!-- ==============================================================================
+                           corps de la page
+      ============================================================================== -->
+
+                       <!-- SECTION SLIDER -->
+
+                       <section class="slider">
+                        <div class="slider-items">
+               
+                          <div class="item">
+                              <img src="images/1.jpeg" > 
+               
+                              <div class="card">
+                                  <blockquote>
+                                      La meteo c'est ce qoui on s'attent, le climat c'est ce que nous 
+                                     obtenons.
+                                  </blockquote>
+                                  <p>-Robert Anson Heinlein</p>
+                              </div>
+               
+                           </div>
+               
+                            <div class="item">
+                              <img src="images/2.jpeg" style="height: 140vh;">
+                              <div class="card">
+                               <blockquote>
+                                  Arbre renversé par le vent avait plus de branches que racines
+                               </blockquote>
+                               <p>-Proverbe chinois</p>
+                           </div>
+                            </div>
+               
+                            <div class="item">
+                              <img src="./images/3.jpeg" style="height: 140vh;">
+                              <div class="card">
+                               <blockquote>
+                                 Le soleil doit être amoureux de l'océan pour s'éteindre dedans. 
+                               </blockquote>
+                               <p>-Guelai Inesse</p>
+                           </div>
+                            </div>
+               
+                            <div class="item">
+                              <img src="./images/4.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                 Le vent est le souffle de l'atmosphère et révéle en prenant son air,
+                                 l'ère d'un temps pollué.
+                               </blockquote>
+                               <p>-Sonia Lahsaini</p>
+                           </div>
+                            </div>
+               
+                            <div class="item">
+                              <img src="./images/5.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                  T'as pas besoin de M'sieur Météo pour savoir d'où vient le vent
+                               </blockquote>
+                               <p>-Internaute</p>
+                           </div>
+                            </div>
+               
+                          <div class="item">
+                              <img src="./images/6.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                   Borné dans la nature,infini dans ses voeux,l'homme est un dieu tombé
+                                   qui se souvient des cieux.
+                               </blockquote>
+                               <p>-Alphonse de Lamartine</p>
+                           </div>
+                          </div>
+               
+                          <div class="item">
+                              <img src="./images/7.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                  Dieu et la nature nous ont fait ce que nous sommes, mais à travers notre
+                                  génie createur nous faisons de nous-même ce que nous voulons être.
+                               </blockquote>
+                               <p>-Marcus Garvey</p>
+                           </div>
+                          </div>
+               
+                          <div class="item">
+                              <img src="./images/8.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                  La nature est eternellement jeune, belle et généreuse.Elle verse
+                                  la poésie et la beauté à tous les êtres, à toutes les plantes qu'on
+                                  laisse s'y développer.
+                               </blockquote>
+                               <p>-George Sand</p>
+                           </div>
+                          </div>
+               
+                          <div class="item">
+                              <img src="./images/9.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                   La nature ne se perd pas. Ce qui se défait d'un côté se refait de l'autre.
+                               </blockquote>
+                               <p>-Marcel Aymé</p>
+                           </div>
+                          </div>
+               
+                          <div class="item">
+                              <img src="./images/10.jpeg" >
+                              <div class="card">
+                               <blockquote>
+                                   La nature fait les choses sans se presser,et pourtant tout est accompli.
+                               </blockquote>
+                               <p>- Lao-Tseu</p>
+                           </div>
+                          </div>
+                      </div> 
+                      <!-- slider controls -->
+                      <div class="left"> < </div>
+                      <div class="right">></div>
+                   </section>
+
+
+
+
+
+
+                  <!-- SECTION METEOLOGIQUE -->
+
+    <section class="corps">
+       
+       <div class="card_meteo">
+           <div>
+               <img src="./images/localisation.png" width="70px">
+              <span class="villePays"></span>
+        </div>
+         
+        <div><h3 class="despMeteo"></h3>
+           <img src="" class="icon" width="90px">
+        </div>
+           
+        <div>
+            <i class="fas fa-thermometer-quarter"></i>
+           <span class="temperature"></span>
+        </div>
+
+           <div>
+               <span>Humidité :</span>
+            <img src="images/Humidity.png"   width="30px">
+            <span class="humidite"></span>
+           </div>
+           
+       </div>
+
+
+ <!-- ==============================================================================
+                           pied de la page
+      ============================================================================== -->
+    </section>
+    <footer class="pied"> © copyright 2021-BirladoTech & RwTechnology</footer>
+
+   <!-- appel du fichier javascript -->
+   <script src="./js/slider.js"></script>
+    <script src="./js/meteo.js"></script> 
+</body>
+</html>

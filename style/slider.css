@@ -1,0 +1,93 @@
+.slider
+{
+     margin-top:4rem ;
+    width: 100%;
+    height: 150vh;
+}
+
+.slider .slider-items .item img
+{
+    width: 100%;
+    display: block;
+}
+
+.slider .slider-items .item .card {
+    padding-top: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
+    background: rgba(0, 0, 0, 0.6);
+      width: 40%;
+      height: 60%;
+      color: #ff0157;
+      position: absolute;
+      top:65%;
+      left: 30%;
+    }
+
+.slider .slider-items .item p {
+color: yellow;
+    }
+
+.slider .left,.slider .right
+{
+    position: absolute;
+    top: 90%;
+    height: 40px;
+    width: 40px;
+    background: #ff0157;
+    color: white;
+    text-align: center;
+    font-size: 30px;
+    line-height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.slider .left:active,.slider .right:active
+{
+    padding: 1rem;
+}
+
+.slider .left
+{
+  left: 5%;
+}
+.slider .right
+{
+    right: 5%;
+}
+
+.slider .slider-items .item 
+{
+    display: none;
+}
+
+
+@media(max-width:750px)
+{
+
+    .slider .slider-items .item img
+{
+    width: 100%;
+    height: 120vh;
+}
+
+.slider .slider-items .item .card {
+    font-size: 2rem;
+      width: 90%;
+      top:70%;
+      left: 5%;
+   
+    }
+
+.slider .left
+{
+    top: 95%;
+  left: 0%;
+}
+.slider .right
+{
+    top: 95%;
+    right: 0%;
+}
+
+}
