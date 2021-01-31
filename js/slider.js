@@ -1,15 +1,23 @@
-let slides=document.querySelector('.slider-items').children;
+// ======================================================================================
+//                acceder aux objet du DOM
+// ======================================================================================
+let slides=document.querySelector('.slider-items').children;// tableau d'objet
 
-let longueur=slides.length;
+let longueur=slides.length;// taille du tableau
 
 
-let left=document.querySelector('.left');
-let right=document.querySelector('.right');
+let left=document.querySelector('.left'); // bouton gauche
+let right=document.querySelector('.right'); // bouton droit
 
-let compteur=0;
-slides[0].style.display="block";
+let compteur=0; // pour acceder à chacun des elements du tableau
+slides[0].style.display="block";// affichage du premier element du tableau
 
-right.addEventListener('click',()=>{ 
+
+// ================================================================================================
+//                      Gestion des evenement
+// ================================================================================================
+
+right.addEventListener('click',()=>{  // evenement boutton droit
   defiler('next');
   switch (compteur) {
     case 0:
@@ -126,7 +134,7 @@ right.addEventListener('click',()=>{
 
 left.addEventListener('click',()=>{
   defiler('prev'); 
-  console.log(compteur); 
+  
 
   switch (compteur) {
     case 0:
@@ -242,7 +250,7 @@ left.addEventListener('click',()=>{
 
 
 
- let defiler=(direction)=>
+ let defiler=(direction)=> // fonction qui controle l'etat du defilement
 {
     if(direction=='next')
     {

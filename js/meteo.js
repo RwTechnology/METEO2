@@ -1,5 +1,5 @@
 //    ========================================================================
-//        Declaration des variable et accessession au objet du Document (DOM)
+//        Declaration des variable et acceder au objet du Document (DOM)
 //    ========================================================================
 
 let searchBox=document.querySelector('.searchBox')
@@ -14,6 +14,7 @@ let icon=document.querySelector('.icon');
 let despMeteo=document.querySelector('.despMeteo');
 let humidite=document.querySelector('.humidite');
 let villePays=document.querySelector('.villePays');
+let erreur=document.querySelector('.erreur');
 
 //    ======================================================================
 //    Donnees de L'API(Application programming Interface)   
@@ -35,7 +36,7 @@ searchBox.addEventListener('submit',(e)=>
 },false)
 
 //    ===========================================================================================
-//        Gestionnaire meteologique : Appel de API et accessession aux coordonnes meteologique
+//        Gestionnaire meteologique : Appel de API et acceder aux coordonnes meteologique
 //    ===========================================================================================
 
 let meteologue=(donnee)=>
@@ -70,7 +71,15 @@ let meteologue=(donnee)=>
 
     })
     .catch((err) => {
-        alert(err);
+        if(err=="TypeError: Failed to fetch")
+        {
+            erreur.innerHTML="problème de connexion ";
+        }
+        else
+        erreur.innerHTML="ville non trouvé ou erreur orthographe";
+        
+       
+
     });
 }
 
