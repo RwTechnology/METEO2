@@ -1,5 +1,5 @@
 //    ========================================================================
-//        Declaration des variable et acceder au objet du Document (DOM)
+//        Declaration des variable et access au objet du Document (DOM)
 //    ========================================================================
 
 let searchBox=document.querySelector('.searchBox')
@@ -36,7 +36,7 @@ searchBox.addEventListener('submit',(e)=>
 },false)
 
 //    ===========================================================================================
-//        Gestionnaire meteologique : Appel de API et acceder aux coordonnes meteologique
+//        Gestionnaire meteologique : Appel de API et access aux coordonnes meteologique
 //    ===========================================================================================
 
 let meteologue=(donnee)=>
