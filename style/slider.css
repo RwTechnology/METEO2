@@ -19,7 +19,7 @@
     font-size: 2rem;
     background: rgba(0, 0, 0, 0.6);
       width: 40%;
-      height: 80%;
+      height: 60%;
       color: #ff0157;
       position: absolute;
       top:65%;
@@ -76,10 +76,12 @@ color: yellow;
 .slider .slider-items .item .card {
     font-size: 2rem;
       width: 90%;
+      height: 80%;
       top:70%;
       left: 5%;
    
     }
+
 
 .slider .left
 {
