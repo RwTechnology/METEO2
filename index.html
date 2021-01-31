@@ -18,13 +18,16 @@
         <div class="logo">
             <img src="./images/logo.jpg">
             <legend>APP weather</legend>
-        </div>
+        </div >
        
         <form class="searchBox">
             <input type="text"  id="textsearch"  placeholder="saisissez votre ville ici.." required>
            <input type="submit" value="SEARCH " id="search">
         </form>
-        
+        <div>
+            <p class="errorconnect">problème de connexion</p>
+            <p class="error">ville non trouvé ou erreur orthographe</p>
+      </div>
     </header>
     
 
@@ -191,6 +194,6 @@
 
    <!-- appel du fichier javascript -->
    <script src="./js/slider.js"></script>
-    <script src="./js/meteo.js"></script> 
+    <script src="./js/meteo.js" async></script> 
 </body>
 </html>

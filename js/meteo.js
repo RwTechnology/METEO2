@@ -14,7 +14,8 @@ let icon=document.querySelector('.icon');
 let despMeteo=document.querySelector('.despMeteo');
 let humidite=document.querySelector('.humidite');
 let villePays=document.querySelector('.villePays');
-let erreur=document.querySelector('.erreur');
+let errorconnect=document.querySelector('.errorconnect');
+let error=document.querySelector('.error');
 
 //    ======================================================================
 //    Donnees de L'API(Application programming Interface)   
@@ -69,14 +70,21 @@ let meteologue=(donnee)=>
         
         slider.style.display="none";
 
+        errorconnect.style.display="none";
+        error.style.display="none";
     })
     .catch((err) => {
         if(err=="TypeError: Failed to fetch")
         {
-            alert("problème de connexion ");
+            errorconnect.style.display="block";
+            corps.style.display="none";
+            slider.style.display="block";
+
         }
         else
-        alert("ville non trouvé ou erreur orthographe");
+        error.style.display="block";
+        corps.style.display="none";
+        slider.style.display="block";
     });
 }
 
