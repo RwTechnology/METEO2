@@ -11,6 +11,9 @@ body {
   border-bottom: 1rem solid red;
   margin-bottom: 2rem;
 }
+.entete .erreur{
+ display: block;
+}
 
 .entete img {
   width: 100px;

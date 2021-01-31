@@ -73,13 +73,10 @@ let meteologue=(donnee)=>
     .catch((err) => {
         if(err=="TypeError: Failed to fetch")
         {
-            erreur.innerHTML="problème de connexion ";
+            alert("problème de connexion ");
         }
         else
-        erreur.innerHTML="ville non trouvé ou erreur orthographe";
-        
-       
-
+        alert("ville non trouvé ou erreur orthographe");
     });
 }
 
