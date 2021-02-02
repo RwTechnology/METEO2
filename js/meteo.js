@@ -79,9 +79,10 @@ let meteologue=(donnee)=>
             errorconnect.style.display="block";
             corps.style.display="none";
             slider.style.display="block";
-
+            error.style.display="none";
         }
         else
+        errorconnect.style.display="none";
         error.style.display="block";
         corps.style.display="none";
         slider.style.display="block";
